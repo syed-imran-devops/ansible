@@ -1,5 +1,4 @@
 - name: pint the server
   hosts: web
   tasks: 
-   ansible.builtin.ping:
-   
+    ansible.builtin.ping:
