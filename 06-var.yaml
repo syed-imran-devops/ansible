@@ -6,13 +6,13 @@
     duration: 10min
 
     tasks:
-      vars:
 
-      - name: print the information
+      - name: print override information
+        vars:
         ansible.builtin.debug:
         course: "devops"
-         msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
 
       - name: print the information
         ansible.builtin.debug:
-         msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
