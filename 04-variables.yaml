@@ -2,8 +2,8 @@
   hosts: web
   vars:
         course: ansible
-             duration: 20hrs
-              title: sam
+        duration: 20hrs
+        title: sam
 
   tasks:
            - name: print the value
