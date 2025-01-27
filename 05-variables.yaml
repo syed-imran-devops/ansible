@@ -1,0 +1,10 @@
+- name: varianles
+  host: web
+  vars: 
+    course: imran
+    trainer: sam
+    duration: 20min
+
+  tasks:
+    ansible.builtin.debug:
+      msg: "hi iam learning {{course}}" from {{trainer}} and the duration is {{duration}}
