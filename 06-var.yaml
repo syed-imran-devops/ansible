@@ -7,7 +7,7 @@
 
   tasks:
 
-      - name: print override information
+      - name: print
         vars:
           course: "devops"
         ansible.builtin.debug:
