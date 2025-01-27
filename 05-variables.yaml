@@ -1,5 +1,5 @@
-- name: varianles
-  host: web
+- name: variables
+  hosts: web
   vars: 
     course: imran
     trainer: sam
