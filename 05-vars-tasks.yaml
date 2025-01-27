@@ -1,17 +1,26 @@
-- name: variables
+- name: ansible
   hosts: web
   vars:
-               course: ansible
-               duration: 20hrs
-               title: sam
+    course: ansible
+    trainer: siva
+    duration: 10min
 
   tasks:
-           - name: print override information
-             vars:
-              course: "devops"
-             ansible.builtin.debug:
-              msg: "hello iam learning {{course}} from sivakumar and the duration is {{duration}} and the title is {{title}}"
 
-           - name: print information
-             ansible.builtin.debug:
-              msg: "hello iam learning {{course}} from sivakumar and the duration is {{duration}} and the title is {{title}}"
+      - name: print
+        vars:
+          course: "devops"
+        ansible.builtin.debug:
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
+
+      - name: print
+        ansible.builtin.debug:
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
+
+
+      - name: print
+        vars:
+          course: "python"
+          trainer: "sameera"
+        ansible.builtin.debug:
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
