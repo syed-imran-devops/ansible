@@ -16,3 +16,10 @@
       - name: print
         ansible.builtin.debug:
           msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
+
+
+      - name: print
+        vars:
+          course: "imran"
+        ansible.builtin.debug:
+          msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
