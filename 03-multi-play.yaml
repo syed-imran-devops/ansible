@@ -1,5 +1,5 @@
 - name: PLAY-1
-  hosts: local hosts
+  hosts: localhosts
   tasks:
     - name: PLAY-1 AND PLAY-2
       ansible.buitlin.debug:
@@ -7,7 +7,7 @@
 
 
 - name: PLAY-2
-  hosts: local hosts
+  hosts: localhosts
   tasks:
     -name: PLAY-2 AND TASK-2
       ansible.buitlin.debug:
