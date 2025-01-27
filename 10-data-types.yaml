@@ -1,0 +1,21 @@
+- name: data types
+  hosts: localhosts
+  vars:
+    course: devops with aws
+    tools: 
+    - linux
+    - docker
+    - kubernetis
+
+    experiance:
+    devops: 3
+    aws: 2
+    docker: 1
+
+    realproject: true
+
+    tasks:
+      - name: print
+        ansible.builtin.debug:
+          msg "hi i worked on {{course}}, and i have experience in {{experiance}} and is real project {{realproject}}"
+
