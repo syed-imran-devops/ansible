@@ -1,7 +1,7 @@
 - name: variables
   hosts: web
   vars: 
-    course: imran
+    course: ansible
     trainer: sam
     duration: 20min
 
