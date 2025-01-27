@@ -8,9 +8,9 @@
     - kubernetis
 
     experiance:
-    devops: 3
-    aws: 2
-    docker: 1
+     devops: 3
+     aws: 2
+     docker: 1
 
     realproject: true
 
