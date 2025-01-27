@@ -1,0 +1,7 @@
+- name: variables from arguments
+  hosts: localhosts
+  tasks: 
+    - name: var from arg
+      ansible.builtin.debug:
+         msg: "my name is {{NAME}} and iam a devops {{DESIGNATION}}" 
+
