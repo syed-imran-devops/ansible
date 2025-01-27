@@ -1,14 +1,14 @@
-- name: play1
+- name: PLAY-1
   hosts: local hosts
   tasks:
-    - name: play1 and task1
+    - name: PLAY-1 AND PLAY-2
       ansible.buitlin.debug:
         msg: "hello iam from play1 nad task1"
 
 
-- name: play2
+- name: PLAY-2
   hosts: local hosts
   tasks:
-    -name: play2 and task2
+    -name: PLAY-2 AND TASK-2
       ansible.buitlin.debug:
         msg: "hello iam from play2 and task 2"
