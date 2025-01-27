@@ -17,5 +17,5 @@
   tasks:
       - name: print
         ansible.builtin.debug:
-          msg: "hi i worked on {{course}}, and i have experience in {{experiance}} and is real project {{realproject}}"
+          msg: "hi i worked on course: {{course}}, and i have experience in {{experiance}} and is real project {{realproject}} and tools covered is: {{tools}}"
 
