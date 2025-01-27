@@ -4,11 +4,3 @@
     - name: PLAY-1 AND TASK-1
       ansible.builtin.debug:
         msg: "hello iam from play1 nad task1"
-
-
-- name: PLAY-2
-  hosts: web
-  tasks:
-    -name: PLAY-2 AND TASK-2
-      ansible.builtin.debug:
-        msg: "hello iam from play2 and task 2"
