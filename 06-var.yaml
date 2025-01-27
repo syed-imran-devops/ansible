@@ -11,10 +11,8 @@
       - name: print the information
         ansible.builtin.debug:
         course: "devops"
-         msg: "hi iam learning {{course}}" from {{trainer}} and the duration is {{duration}}
+         msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
 
       - name: print the information
         ansible.builtin.debug:
-         msg: "hi iam learning {{course}}" from {{trainer}} and the duration is {{duration}}
-
-
+         msg: "hi iam learning {{course}} from {{trainer}} and the duration is {{duration}}"
