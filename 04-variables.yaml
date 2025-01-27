@@ -7,5 +7,5 @@
 
     tasks:
     - name 
-    ansible.builtin.debug
+      ansible.builtin.debug:
       "hello iam learning {{course}} from sivakumar and the duration is {{duration}}, and the title is {{title}}"
