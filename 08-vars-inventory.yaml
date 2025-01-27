@@ -1,5 +1,5 @@
 - name: files from inventory
-  hosts: imran
+  hosts: localhosts
   tasks:
   - name: print information
     ansible.builtin.debug:
