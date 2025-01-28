@@ -40,9 +40,9 @@
 - name: print min and max age
   hosts: localhost
   vars:
-    ages: [25, 30, 15, 18, 89]
+    age : [25, 30, 15, 18, 89]
 
   tasks:
     - name: printing min and max age
       ansible.builtin.debug:
-        msg: "hi min age is {{ages | min}}, and max age is {{ages | max}}"
+        msg: "hi min age is {{age | min}}, and max age is {{age | max}}"
