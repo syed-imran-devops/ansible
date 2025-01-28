@@ -15,3 +15,18 @@
     ansible.builtin.debug:
       msg: "given number is {{number}} greater than 10 or equal to 10"
     when: number | int >= 10
+
+
+
+- name: check number
+  hosts: web
+  vars_prompt:
+  - name: given number
+    prompt: number type chai mama
+    private: no
+
+  tasks:
+  - name: number is less than 10
+    ansible.builtin.debug:
+      msg: "given number {{number}} is less than 10"
+    when: number | int < 10
