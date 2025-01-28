@@ -4,7 +4,7 @@
   
   tasks:
     - name: install packages
-      ansible.builtin.debug:
+      ansible.builtin.dnf:
         name: "{{ item }}"
         state: latest
       loop:
