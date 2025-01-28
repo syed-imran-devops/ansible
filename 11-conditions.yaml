@@ -21,12 +21,12 @@
 - name: check number
   hosts: localhost
   vars_prompt:
-  - name: number
+  - name: imran
     prompt: number type chai mama
     private: no
 
   tasks:
   - name: number is less than 10
     ansible.builtin.debug:
-      msg: "given number {{number}} is less than 10"
+      msg: "given number {{imran}} is less than 10"
     when: number | int < 10
