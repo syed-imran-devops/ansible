@@ -3,7 +3,7 @@
   vars_prompt:
   - name: number
     prompt: type the number
-    private: false
+    private: true
 
   tasks:
     - name: given number
