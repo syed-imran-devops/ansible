@@ -3,9 +3,11 @@
   tasks: 
   - name: print names
     ansible.builtin.debug:
-      msg: "install {{item}}"
+      msg: "hi {{item}}"
 
     loops:
     - linux
     - shell
     - ansible
+
+
