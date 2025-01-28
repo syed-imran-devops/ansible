@@ -23,3 +23,12 @@
   - name: lower case
     ansible.builtin.debug:
       msg: "hi {{name | lower }}"
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    numbers: [1, 2, 3, 4, 5, 5, 6]
+  tasks:
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "number{{number | "unique"}}"
