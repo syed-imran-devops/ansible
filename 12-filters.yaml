@@ -8,7 +8,7 @@
 - name: upper case
   hosts: localhost
   vars:
-    name: "hi mama"
+    name: "sameera i love u"
   tasks:
   - name: upper case
     ansible.builtin.debug:
