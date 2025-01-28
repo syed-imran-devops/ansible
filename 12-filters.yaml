@@ -61,7 +61,7 @@
         msg: "before convert: {{my_dict}}"
     - name: after convert
       ansible.builtin.debug:
-        msg: "after conert: {{my_dict | dict2items}}"
+        msg: "after convert: {{my_dict | dict2items}}"
 
 
 - name: convert items to dictionary
@@ -72,10 +72,10 @@
     - {'key': 'trainer', 'value': 'sameera'}
     - {'key': 'duration', 'value': '120hrs'}
   tasks:
-  - name: before convert
-    ansible.builtin.debug:
-      msg: "before convert: {{my_list}}"
+   - name: before convert
+     ansible.builtin.debug:
+       msg: "before convert: {{my_list}}"
 
-  - name: after convert
-    ansible.builtin.debug:
-      msg: "after convert: {{my_list | items2dict}}"
+   - name: after convert
+     ansible.builtin.debug:
+        msg: "after convert: {{my_list | items2dict}}"
