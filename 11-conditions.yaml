@@ -21,7 +21,7 @@
 - name: check number
   hosts: localhost
   vars_prompt:
-  - name: imran
+  - name: number
     prompt: number type chai mama
     private: no
 
