@@ -19,7 +19,7 @@
 
 
 - name: check number
-  hosts: web
+  hosts: localhost
   vars_prompt:
   - name: given number
     prompt: number type chai mama
