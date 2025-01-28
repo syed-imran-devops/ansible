@@ -5,7 +5,7 @@
     ansible.builtin.dnf:
       msg: "hi {{item}}"
 
-    loops:
+    loop:
     - linux
     - shell
     - ansible
