@@ -31,4 +31,4 @@
   tasks:
   - name: remove duplicates
     ansible.builtin.debug:
-      msg: "number{{number | "unique"}}"
+      msg: "number{{numbers | "unique"}}"
