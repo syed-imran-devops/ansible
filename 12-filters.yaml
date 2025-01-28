@@ -13,3 +13,13 @@
   - name: upper case
     ansible.builtin.debug:
       msg: "hlo {{name | upper }}"
+
+
+- name: lower case
+  hosts: localhost
+  vars:
+    name: "imran i love you 2"
+  tasks:
+  - name: lower case
+    ansible.builtin.debug:
+      msg: "hi {{name | lower }}"
