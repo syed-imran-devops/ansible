@@ -1,0 +1,17 @@
+- name: check numner
+  hosts: localhost
+  vars_prompt:
+  - name: number
+    prompt: type the number
+
+  tasks:
+    - name: given number
+      ansible.builtin.debug:
+        msg: "given number {{number}} is less than 10"
+      when: number | int < 10
+
+
+    - name: given number
+      ansible.builtin.debug:
+        msg: "given numner {{numner}} is greater than 10 or equal to 10"
+      when: number | int >=10 
