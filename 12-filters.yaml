@@ -8,11 +8,11 @@
 - name: upper case
   hosts: localhost
   vars:
-    name: "sameera i love u"
+    message: "sameera i love u"
   tasks:
-  - name: upper case
-    ansible.builtin.debug:
-      msg: "hlo {{name | upper }}"
+    - name: upper case
+      ansible.builtin.debug:
+       msg: "hlo {{message | upper }}"
 
 
 - name: lower case
