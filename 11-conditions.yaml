@@ -29,4 +29,4 @@
   - name: number is less than 10
     ansible.builtin.debug:
       msg: "given number {{imran}} is less than 10"
-    when: number | int < 10
+    when: imran | int < 10
