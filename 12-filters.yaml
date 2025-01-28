@@ -68,4 +68,14 @@
   hosts: localhost
   vars:
     my_list:
-    - 
+    - {'key': 'course', 'value': 'ansible'}
+    - {'key': 'trainer', 'value': 'sameera'}
+    - {'key': 'duration', 'value': '120hrs'}
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "before convert: {{my_list}}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "after convert: {{my_list | items2dict}}"
